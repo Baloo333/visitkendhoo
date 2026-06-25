@@ -1,9 +1,10 @@
 hero:
   eyebrow: 📜 800+ years of island memory
   title: History & Heritage
-  lede: |
-    A coral-stone shrine, a sweetened coconut, and the island said to have welcomed the man who brought Islam to the Maldives.
-  image: assets/img/baa-atoll-aerial-1.jpg
+  lede: >
+    A coral-stone shrine, a sweetened coconut, and the island said to have
+    welcomed the man who brought Islam to the Maldives.
+  image: /assets/img/baa-atoll-aerial-1.jpg
 quick_facts:
   - label: Dhivehi name
     value: ކެންދޫ (Kendhoo)
@@ -22,15 +23,22 @@ quick_facts:
 content_sections:
   - eyebrow: 🛕 A landmark older than the nation's modern history
     title: The Magaamfulhu
-    text: |
-      The small house known as the Magaamfulhu — "Thabureyzgefaanuge Magaam" in full — marks the exact place where Thabreyzgefaanu is said to have prayed. Islanders date the structure to over 800 years old, making it one of the more storied heritage sites anywhere in the Maldives.
-    image: assets/img/kendhoo-harbour.jpg
+    text: >
+      The small house known as the Magaamfulhu — "Thabureyzgefaanuge Magaam" in
+      full — marks the exact place where Thabreyzgefaanu is said to have prayed.
+      Islanders date the structure to over 800 years old, making it one of the
+      more storied heritage sites anywhere in the Maldives.
+    image: /assets/img/kendhoo-harbour.jpg
     float_tag_emoji: 🕌
     float_tag_text: est. 1153 CE
   - eyebrow: 🪨 Built from the reef itself
-    title: The old Friday Mosque
-    text: |
-      Kendhoo's historic Friday Mosque is counted among the oldest in Baa Atoll — built, like so much of pre-modern Maldivian architecture, from quarried coral stone with finely carved woodwork inside. These coral-stone mosques are a hallmark of Maldivian craftsmanship: cool, white-walled, and built to outlast the salt air for centuries.
-    image: assets/img/kendhoo-school.jpg
+    title: The old Mosque
+    text: >
+      Kendhoo's historic Mosque is counted among the oldest in Baa Atoll —
+      built, like so much of pre-modern Maldivian architecture, from quarried
+      coral stone with finely carved woodwork inside. These coral-stone mosques
+      are a hallmark of Maldivian craftsmanship: cool, white-walled, and built
+      to outlast the salt air for centuries.
+    image: /assets/img/kendhoo-school.jpg
     float_tag_emoji: 🐚
     float_tag_text: coral stone & coconut timber
