@@ -50,14 +50,16 @@ content:
           - name: text
             type: text
       - name: stats
-        type: list
+        type: object
+        list: true
         fields:
           - name: value
             type: string
           - name: label
             type: string
       - name: experiences
-        type: list
+        type: object
+        list: true
         fields:
           - name: icon
             type: string
@@ -70,7 +72,8 @@ content:
           - name: link_url
             type: string
       - name: split_sections
-        type: list
+        type: object
+        list: true
         fields:
           - name: eyebrow
             type: string
@@ -108,8 +111,17 @@ content:
             type: text
           - name: image
             type: image
+      - name: quick_facts
+        type: object
+        list: true
+        fields:
+          - name: label
+            type: string
+          - name: value
+            type: string
       - name: content_sections
-        type: list
+        type: object
+        list: true
         fields:
           - name: eyebrow
             type: string
@@ -141,7 +153,8 @@ content:
           - name: image
             type: image
       - name: remedies
-        type: list
+        type: object
+        list: true
         fields:
           - name: name
             type: string
@@ -165,7 +178,8 @@ content:
           - name: image
             type: image
       - name: excursions
-        type: list
+        type: object
+        list: true
         fields:
           - name: name
             type: string
@@ -191,7 +205,8 @@ content:
           - name: image
             type: image
       - name: ways_to_reach
-        type: list
+        type: object
+        list: true
         fields:
           - name: icon
             type: string
@@ -200,7 +215,8 @@ content:
           - name: text
             type: text
       - name: guesthouses
-        type: list
+        type: object
+        list: true
         fields:
           - name: name
             type: string
@@ -218,7 +234,8 @@ content:
             type: select
             options: [true, false]
       - name: etiquette
-        type: list
+        type: object
+        list: true
         fields:
           - name: question
             type: string

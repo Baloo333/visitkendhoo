@@ -11,11 +11,11 @@
   --sky-deep:   #0369A1;
   --sky-soft:   #F0F9FF;
   --sky-tint:   #E0F2FE;
-  --sun:        #F97316;
-  --sun-deep:   #EA580C;
+  --sun:        #EA580C; /* Darkened for better accessibility (was #F97316) */
+  --sun-deep:   #C2410C;
   --sun-soft:   #FFF7ED;
-  --mint:       #ECFDF5;
-  --cream:      #FDFBF7;
+  --mint:       #F0FDF4;
+  --cream:      #FAFAFA; /* Cleaner, more modern off-white */
   --ink:        #0F172A;
   --ink-soft:   #475569;
   --line:       #E2E8F0;
@@ -78,8 +78,8 @@ p{ margin:0 0 1.25em; }
   border-radius:999px; border:2px solid transparent; cursor:pointer;
   transition:transform .2s var(--ease), box-shadow .2s, background .2s, color .2s, border-color .2s;
 }
-.btn-primary{ background:var(--sun); color:#fff; box-shadow:0 12px 24px -10px rgba(249,115,22,.4); }
-.btn-primary:hover{ background:var(--sun-deep); transform:translateY(-1px); box-shadow:0 14px 28px -10px rgba(249,115,22,.5); }
+.btn-primary{ background:var(--sun); color:#fff; box-shadow:0 12px 24px -10px rgba(234,88,12,.4); }
+.btn-primary:hover{ background:var(--sun-deep); transform:translateY(-1px); box-shadow:0 14px 28px -10px rgba(194,65,12,.5); }
 .btn-sky{ background:var(--sky); color:#fff; box-shadow:0 12px 24px -10px rgba(2,132,199,.4); }
 .btn-sky:hover{ background:var(--sky-deep); transform:translateY(-1px); box-shadow:0 14px 28px -10px rgba(2,132,199,.5); }
 .btn-soft{ background:var(--white); color:var(--ink); border-color:var(--line); box-shadow:var(--shadow-sm); }
