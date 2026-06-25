@@ -29,12 +29,33 @@ guesthouses:
       website: https://www.dhoanimaldives.com
     button_label: Visit Dhoani Maldives →
     button_url: https://www.dhoanimaldives.com
-  - name: A handful of other options
+  - name: Dhoani Maldives Boutique
     featured: false
     description: |
-      Kendhoo also has a small number of other family-run guesthouses, including **Fasdheythere Inn**, named for the nearby Fasdūtherē island chain. Availability is limited compared to busier tourist islands, so book ahead — particularly during manta season (Jul–Oct) and around Eid holidays.
-
-      <p class="muted small">Can't find what you're looking for? Ask any Kendhoo guesthouse directly — island hosts are usually happy to point you to a neighbour with availability if they're full.</p>
+      A sister property to Dhoani Maldives, offering a boutique experience with modern amenities and personalized service. Perfect for travelers seeking a refined stay while experiencing the authentic local life of Kendhoo.
+    details:
+      address: Avenue, Ruhfalu Hingun, Kendhoo, Baa Atoll, Maldives
+      email: contact@dhoanimaldives.com
+      phone: "+960 988 3177"
+      website: https://www.dhoanimaldives.com
+  - name: Fasdheythere Inn
+    featured: false
+    description: |
+      Named after the nearby Fasdūtherē island chain, this cozy inn is popular with divers and those looking to explore the Baa Atoll UNESCO Biosphere Reserve. It provides a warm, authentic Maldivian hospitality experience.
+    details:
+      address: Fasdheythere Maldives, Kendhoo, Baa Atoll, Maldives
+  - name: Nautical Nook
+    featured: false
+    description: |
+      A charming guesthouse providing a quiet retreat on the island. It offers easy access to Kendhoo's beaches and is an ideal base for independent travelers looking for comfort and value.
+    details:
+      address: Baa Atoll Kendhoo, Kendhoo, Maldives
+  - name: Blue Cave
+    featured: false
+    description: |
+      One of Kendhoo's newer additions, Blue Cave offers comfortable rooms and a friendly atmosphere. A great choice for visitors wanting to enjoy the natural beauty of the Baa Atoll in a peaceful setting.
+    details:
+      address: B. Kendhoo, Baa Atoll, Maldives
 etiquette:
   - question: What should I wear in the village?
     answer: |
