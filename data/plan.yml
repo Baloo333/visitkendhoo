@@ -1,0 +1,56 @@
+hero:
+  eyebrow: 🧭 Getting there & settling in
+  title: Plan Your Visit
+  lede: |
+    Kendhoo is a working local island, not a resort — getting there takes a little more planning, and is part of the experience.
+  image: assets/img/beach-sunset.jpg
+ways_to_reach:
+  - icon: ✈️
+    title: Domestic flight + speedboat — fastest
+    text: |
+      Fly roughly 25 minutes from Malé to Dharavandhoo Airport (several flights daily), then take a speedboat of about 40 minutes on to Kendhoo. The most convenient option if your schedule is tight, and easiest for early arrivals or late departures.
+  - icon: 🚤
+    title: Direct speedboat from Malé
+    text: |
+      A more affordable, slower option: speedboat transfers run on a daily schedule, taking roughly 2.5–4 hours depending on conditions and route. Departure times are fixed, so confirm the day's schedule with your guesthouse before booking flights.
+  - icon: ⛴️
+    title: Public ferry — the budget route
+    text: |
+      A public inter-island ferry connects Malé to Kendhoo a couple of times a week, taking around 7 hours at a fraction of the speedboat cost — a slow, scenic way to travel between atolls. Schedules change, so check current timings locally before relying on it.
+guesthouses:
+  - name: Dhoani Maldives Guesthouse
+    featured: true
+    description: |
+      A family-run guesthouse in the heart of Kendhoo, steps from the Magaamfulhu and the harbour. Dhoani arranges airport transfers, excursions (see the full list on the Things to Do page), and day trips to nearby resorts and Hanifaru Bay.
+    details:
+      address: Fehiali, Maarana Magu, Kendhoo, Baa Atoll, Maldives
+      email: contact@dhoanimaldives.com
+      phone: "+960 988 3177"
+      website: https://www.dhoanimaldives.com
+    button_label: Visit Dhoani Maldives →
+    button_url: https://www.dhoanimaldives.com
+  - name: A handful of other options
+    featured: false
+    description: |
+      Kendhoo also has a small number of other family-run guesthouses, including **Fasdheythere Inn**, named for the nearby Fasdūtherē island chain. Availability is limited compared to busier tourist islands, so book ahead — particularly during manta season (Jul–Oct) and around Eid holidays.
+
+      <p class="muted small">Can't find what you're looking for? Ask any Kendhoo guesthouse directly — island hosts are usually happy to point you to a neighbour with availability if they're full.</p>
+etiquette:
+  - question: What should I wear in the village?
+    answer: |
+      Cover shoulders and knees on village streets, even on a hot day. Swimwear is fine only at a designated "bikini beach," if the island has one, or once you're out on an excursion boat or sandbank — not while walking through the village.
+  - question: Can I take photos of people?
+    answer: |
+      Always ask first, especially for portraits of residents or anything near the Magaamfulhu or mosques. Landscapes, harbours and your own group are generally fine.
+  - question: Is alcohol available?
+    answer: |
+      No — alcohol is prohibited on inhabited local islands like Kendhoo by law, and is only served on resort islands and licensed safari boats. Pork is similarly not available.
+  - question: What about visiting during Ramadan?
+    answer: |
+      Eating, drinking or smoking in public during daylight hours is discouraged out of respect for those fasting. Evenings, by contrast, come alive with family meals and a warm, festive atmosphere.
+  - question: Any house rules for homes or mosques?
+    answer: |
+      Remove your shoes before entering a home or mosque, and keep voices low near the Magaamfulhu and Friday Mosque — both are treated by islanders as places of quiet respect, not just sightseeing stops.
+  - question: What's the best time of year to visit?
+    answer: |
+      For manta rays at Hanifaru Bay, aim for late June through October. For calmer seas generally, the dry season (roughly December–March) is more reliable, though Hanifaru's season runs opposite to it — plan around whichever matters more to you.

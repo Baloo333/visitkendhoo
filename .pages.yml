@@ -1,0 +1,243 @@
+media: assets/img
+
+content:
+  - name: site
+    label: Global Site Info
+    type: file
+    path: data/site.yml
+    fields:
+      - name: brand_name
+        label: Brand Name
+        type: string
+      - name: footer_description
+        label: Footer Description
+        type: text
+      - name: coordinates
+        label: Coordinates
+        type: string
+      - name: distance_from_male
+        label: Distance from Malé
+        type: string
+      - name: contact_email
+        label: Contact Email
+        type: string
+
+  - name: home
+    label: Home Page
+    type: file
+    path: data/home.yml
+    fields:
+      - name: hero
+        type: object
+        fields:
+          - name: eyebrow
+            type: string
+          - name: title
+            type: string
+          - name: dhivehi_title
+            type: string
+          - name: lede
+            type: text
+          - name: image
+            type: image
+      - name: welcome
+        type: object
+        fields:
+          - name: eyebrow
+            type: string
+          - name: title
+            type: string
+          - name: text
+            type: text
+      - name: stats
+        type: object
+        list: true
+        fields:
+          - name: value
+            type: string
+          - name: label
+            type: string
+      - name: experiences
+        type: object
+        list: true
+        fields:
+          - name: icon
+            type: string
+          - name: title
+            type: string
+          - name: text
+            type: text
+          - name: link_label
+            type: string
+          - name: link_url
+            type: string
+      - name: split_sections
+        type: object
+        list: true
+        fields:
+          - name: eyebrow
+            type: string
+          - name: title
+            type: string
+          - name: text
+            type: text
+          - name: image
+            type: image
+          - name: float_tag_emoji
+            type: string
+          - name: float_tag_text
+            type: string
+          - name: button_label
+            type: string
+          - name: button_url
+            type: string
+          - name: reverse
+            type: select
+            options: [true, false]
+
+  - name: history
+    label: History Page
+    type: file
+    path: data/history.yml
+    fields:
+      - name: hero
+        type: object
+        fields:
+          - name: eyebrow
+            type: string
+          - name: title
+            type: string
+          - name: lede
+            type: text
+          - name: image
+            type: image
+      - name: quick_facts
+        type: object
+        list: true
+        fields:
+          - name: label
+            type: string
+          - name: value
+            type: string
+      - name: content_sections
+        type: object
+        list: true
+        fields:
+          - name: eyebrow
+            type: string
+          - name: title
+            type: string
+          - name: text
+            type: text
+          - name: image
+            type: image
+          - name: float_tag_emoji
+            type: string
+          - name: float_tag_text
+            type: string
+
+  - name: culture
+    label: Culture Page
+    type: file
+    path: data/culture.yml
+    fields:
+      - name: hero
+        type: object
+        fields:
+          - name: eyebrow
+            type: string
+          - name: title
+            type: string
+          - name: lede
+            type: text
+          - name: image
+            type: image
+      - name: remedies
+        type: object
+        list: true
+        fields:
+          - name: name
+            type: string
+          - name: description
+            type: text
+
+  - name: explore
+    label: Things to Do
+    type: file
+    path: data/explore.yml
+    fields:
+      - name: hero
+        type: object
+        fields:
+          - name: eyebrow
+            type: string
+          - name: title
+            type: string
+          - name: lede
+            type: text
+          - name: image
+            type: image
+      - name: excursions
+        type: object
+        list: true
+        fields:
+          - name: name
+            type: string
+          - name: note
+            type: string
+          - name: price
+            type: string
+
+  - name: plan
+    label: Plan Your Visit
+    type: file
+    path: data/plan.yml
+    fields:
+      - name: hero
+        type: object
+        fields:
+          - name: eyebrow
+            type: string
+          - name: title
+            type: string
+          - name: lede
+            type: text
+          - name: image
+            type: image
+      - name: ways_to_reach
+        type: object
+        list: true
+        fields:
+          - name: icon
+            type: string
+          - name: title
+            type: string
+          - name: text
+            type: text
+      - name: guesthouses
+        type: object
+        list: true
+        fields:
+          - name: name
+            type: string
+          - name: description
+            type: text
+          - name: address
+            type: string
+          - name: email
+            type: string
+          - name: phone
+            type: string
+          - name: website
+            type: string
+          - name: featured
+            type: select
+            options: [true, false]
+      - name: etiquette
+        type: object
+        list: true
+        fields:
+          - name: question
+            type: string
+          - name: answer
+            type: text

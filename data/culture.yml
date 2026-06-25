@@ -1,0 +1,19 @@
+hero:
+  eyebrow: 🌿 Healers, drums & feast days
+  title: Culture & Traditions
+  lede: |
+    Kendhoo is known across the Maldives for one tradition above all: centuries of herbal healing. It's also, simply, a Maldivian island in full swing — drumming, feasting, fishing and weaving.
+  image: assets/img/kendhoo-childrens-day.jpg
+remedies:
+  - name: Ruggalu beys
+    description: |
+      from young coconut-palm leaves, traditionally used to help set and heal bone fractures.
+  - name: Coconut oil & water
+    description: |
+      applied for skin and wounds, taken for hydration; the young "kurumba" coconut is prized.
+  - name: Screw pine
+    description: |
+      leaves used in weaving, roots and fruit used for urinary and digestive complaints.
+  - name: Spiritual healing
+    description: |
+      prayer and recitation are often woven into treatment; some remedies are gathered by moonlight, which healers say affects their potency.
