@@ -25,15 +25,15 @@ document.addEventListener('DOMContentLoaded', function () {
   // Scroll reveal
   var revealEls = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window && revealEls.length) {
-    var io = new IntersectionObserver(function (entries) {
+    window.observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
           entry.target.classList.add('is-visible');
-          io.unobserve(entry.target);
+          window.observer.unobserve(entry.target);
         }
       });
     }, { threshold: 0.12 });
-    revealEls.forEach(function (el) { io.observe(el); });
+    revealEls.forEach(function (el) { window.observer.observe(el); });
   } else {
     revealEls.forEach(function (el) { el.classList.add('is-visible'); });
   }
