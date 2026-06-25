@@ -1,0 +1,51 @@
+hero:
+  eyebrow: 🐬 Reefs, sandbanks & manta trains
+  title: Things to Do
+  lede: Kendhoo sits inside one of the richest stretches of ocean in the Maldives — a short boat ride from the world's largest known manta ray feeding ground.
+  image: assets/img/manta-ray.jpg
+excursions:
+  - name: Castaway Picnic
+    note: 10% off each additional person
+    price: $25
+  - name: Guided Snorkeling — Nearby Islands
+    note:
+    price: $30
+  - name: Guided Snorkeling — Island House Reef
+    note:
+    price: $7
+  - name: Sunbathing at Sandbank
+    note: 10% off each additional person
+    price: $55
+  - name: Private Dinner / Lunch — Nearby Islands
+    note: 20% off each additional person
+    price: $160
+  - name: Private Dinner / Lunch — Island Beach
+    note: 20% off each additional person
+    price: $110
+  - name: Private Dinner / Lunch — Sandbank
+    note: 20% off each additional person
+    price: $230
+  - name: Mantastic
+    note: Min. 2 people · 15% off if 3 or more
+    price: $100
+  - name: Dolphun
+    note: 15% off each additional person
+    price: $130
+  - name: Turtour
+    note: 15% off each additional person
+    price: $120
+  - name: Spearstrike
+    note: 1–2 people · 20% off each additional person
+    price: $125
+  - name: Big Game Fishing
+    note: 3 hrs · 1–3 people (max 3) · extra hours $90–100/hr
+    price: $125
+  - name: Sunset Fishing with BBQ
+    note: 1–3 people · BBQ dinner included · +$35 per extra person
+    price: $165
+  - name: Island Hopper
+    note: 1–2 people · +$30 per extra person
+    price: $135
+  - name: Resort Daycation
+    note: Day visit to a nearby resort island
+    price: Varies
