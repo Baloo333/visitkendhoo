@@ -92,9 +92,7 @@ content:
           - name: button_url
             type: string
           - name: reverse
-            type: select
-            options: [true, false]
-
+            type: boolean
   - name: history
     label: History Page
     type: file
