@@ -229,8 +229,7 @@ content:
           - name: website
             type: string
           - name: featured
-            type: select
-            options: [true, false]
+            type: boolean
       - name: etiquette
         type: object
         list: true
