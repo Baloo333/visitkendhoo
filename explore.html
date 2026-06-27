@@ -1,186 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Things to Do — Visit Kendhoo</title>
-<meta name="description" content="Hanifaru Bay manta rays, the Fasdūtherē sandbank chain, and a full list of local Kendhoo excursions — snorkeling, fishing, picnics and sunset dinners.">
-<link rel="canonical" href="https://visitkendhoo.com/explore.html">
-<meta property="og:title" content="Things to Do — Visit Kendhoo">
-<meta property="og:description" content="Hanifaru Bay manta rays, the Fasdūtherē sandbank chain, and a full list of local Kendhoo excursions — snorkeling, fishing, picnics and sunset dinners.">
-<meta property="og:image" content="https://visitkendhoo.com/assets/img/manta-ray.jpg">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://visitkendhoo.com/explore.html">
-<meta property="og:site_name" content="Visit Kendhoo">
-<meta property="og:locale" content="en_US">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Things to Do — Visit Kendhoo">
-<meta name="twitter:description" content="Hanifaru Bay manta rays, the Fasdūtherē sandbank chain, and a full list of local Kendhoo excursions — snorkeling, fishing, picnics and sunset dinners.">
-<meta name="twitter:image" content="https://visitkendhoo.com/assets/img/manta-ray.jpg">
-<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="assets/css/style.css">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://visitkendhoo.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Things to Do",
-      "item": "https://visitkendhoo.com/explore.html"
-    }
-  ]
-}
-</script>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Things to Do | Visit Kendhoo</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#ffffff",
+                        "surface-tint": "#ab3600",
+                        "surface-container-low": "#f3f3f6",
+                        "on-secondary-fixed-variant": "#004f58",
+                        "primary-container": "#ff5f1f",
+                        "surface-dim": "#dadadc",
+                        "tertiary-container": "#00a87f",
+                        "on-secondary-container": "#00616d",
+                        "on-background": "#1a1c1e",
+                        "surface-container-highest": "#e2e2e5",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed": "#36ffc4",
+                        "inverse-primary": "#ffb59c",
+                        "on-primary-fixed": "#390c00",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed-dim": "#00daf3",
+                        "on-tertiary-container": "#003425",
+                        "on-tertiary-fixed": "#002116",
+                        "on-surface-variant": "#5b4138",
+                        "on-tertiary-fixed-variant": "#00513c",
+                        "tertiary": "#006c50",
+                        "inverse-surface": "#2f3133",
+                        "on-primary": "#ffffff",
+                        "background": "#f9f9fc",
+                        "primary": "#ab3600",
+                        "inverse-on-surface": "#f0f0f3",
+                        "secondary-fixed": "#9cf0ff",
+                        "surface-container-high": "#e8e8ea",
+                        "outline": "#8f7066",
+                        "surface-bright": "#f9f9fc",
+                        "on-surface": "#1a1c1e",
+                        "secondary": "#006875",
+                        "primary-fixed": "#ffdbcf",
+                        "error": "#ba1a1a",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#e2e2e5",
+                        "tertiary-fixed-dim": "#00e1ab",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed-dim": "#ffb59c",
+                        "secondary-container": "#00e3fd",
+                        "surface-container": "#eeeef0",
+                        "on-primary-fixed-variant": "#832700",
+                        "surface": "#f9f9fc",
+                        "outline-variant": "#e3bfb3",
+                        "on-secondary-fixed": "#001f24",
+                        "on-primary-container": "#561700",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "base": "8px",
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "20px",
+                        "section-gap": "8rem",
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Playfair Display"],
+                        "body-lg": ["DM Sans"],
+                        "headline-xl-mobile": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "headline-xl": ["Playfair Display"],
+                        "label-md": ["DM Sans"],
+                        "body-md": ["DM Sans"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-xl-mobile": ["40px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "headline-xl": ["60px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
 </head>
-<body>
-
-<header class="site-header">
-  <div class="container">
-    <div class="nav-wrap">
-      <a href="index.html" class="brand">
-        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#E6F7FD"/><path d="M7 26c3-1 6-1 13-1s10 0 13 1" stroke="#21B4E6" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M11 25c0-7 4-11 9-13" stroke="#0E84B5" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M20 12l7 13c-4 1.6-10 1.6-14 0z" fill="#FF8A3D"/></svg>
-        Visit Kendhoo
-      </a>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="history.html">History</a></li>
-          <li><a href="culture.html">Culture</a></li>
-          <li><a href="explore.html">Things to Do</a></li>
-          <li><a href="plan.html">Plan a Visit</a></li>
-        </ul>
-      </nav>
-      <div class="nav-cta">
-        <a href="plan.html#stay" class="btn btn-sky btn-sm">Where to Stay</a>
-        <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
-      </div>
-    </div>
-  </div>
-</header>
-
-<section class="subhero">
-  <div class="container">
-    <div class="subhero-card">
-      <img src="assets/img/manta-ray.jpg" alt="A reef manta ray swimming in clear Maldivian water">
-      <div class="subhero-inner">
-        <span class="eyebrow">🐬 Reefs, sandbanks &amp; manta trains</span>
-        <h1>Things to Do</h1>
-        <p class="lede">Kendhoo sits inside one of the richest stretches of ocean in the Maldives — a short boat ride from the world's largest known manta ray feeding ground.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <div class="split reveal">
-      <div class="split-media">
-        <img loading="lazy" src="assets/img/hanifaru-bay-sharks.jpg" alt="Snorkelers and reef life at Hanifaru Bay, Baa Atoll">
-        <span class="float-tag"><span class="em">🌊</span> Protected marine park</span>
-      </div>
-      <div>
-        <span class="eyebrow">🐠 The bay the size of a football pitch</span>
-        <h2>Hanifaru Bay</h2>
-        <p>On the far side of Baa Atoll lies Hanifaru Bay — a small, keyhole-shaped bay that, during the southwest monsoon (roughly May to November, peaking July–October), funnels plankton-rich water into a shrinking pocket of sea. The result is one of the most concentrated manta ray feeding events on the planet: on a good day, dozens of reef manta rays gather to feed, sometimes joined by whale sharks, with sightings of over a hundred mantas at once recorded in peak season.</p>
-        <p>Because it's a protected Marine Protected Area within the wider UNESCO Biosphere Reserve, diving is not permitted — only guided snorkelling, with strict limits on boats and time in the water to protect the animals. Trips are arranged through licensed local guides, typically booked via guesthouses on islands like Kendhoo or Dharavandhoo.</p>
-        <div class="factlist" style="margin-top:1.2rem;">
-          <span class="chip chip-sky">🗓️ Best: late Jun–Oct</span>
-          <span class="chip chip-sky">🤿 Snorkel only</span>
-          <span class="chip chip-sky">🐋 Mantas &amp; whale sharks</span>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-container">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-xl border-b border-primary/20 dark:border-primary/40">
+        <a class="flex items-center gap-2 cursor-pointer active:opacity-70" href="index.html">
+            <span class="material-symbols-outlined text-secondary dark:text-secondary-fixed" style="font-variation-settings: 'FILL' 1;">landscape</span>
+            <span class="font-headline-md text-[24px] font-semibold text-secondary dark:text-secondary-fixed tracking-tight" data-cms-site="brand_name">Visit Kendhoo</span>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+            <a class="text-on-surface dark:text-inverse-on-surface hover:text-primary transition-colors font-body-md text-body-md hover:bg-primary/5 dark:hover:bg-primary/10 px-3 py-2 rounded-lg scale-95 duration-150 ease-in-out" href="history.html">History</a>
+            <a class="text-on-surface dark:text-inverse-on-surface hover:text-primary transition-colors font-body-md text-body-md hover:bg-primary/5 dark:hover:bg-primary/10 px-3 py-2 rounded-lg scale-95 duration-150 ease-in-out" href="culture.html">Culture</a>
+            <a class="text-primary dark:text-secondary-fixed-dim border-b-2 border-primary dark:border-secondary-fixed-dim pb-1 font-bold font-body-md text-body-md hover:bg-primary/5 dark:hover:bg-primary/10 px-3 py-2 scale-95 duration-150 ease-in-out" href="explore.html">Things to Do</a>
+            <a class="text-on-surface dark:text-inverse-on-surface hover:text-primary transition-colors font-body-md text-body-md hover:bg-primary/5 dark:hover:bg-primary/10 px-3 py-2 rounded-lg scale-95 duration-150 ease-in-out" href="plan.html">Plan a Visit</a>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="bg-sky">
-  <div class="container">
-    <div class="split reverse reveal">
-      <div class="split-media"><img loading="lazy" src="assets/img/baa-atoll-aerial-2.jpg" alt="A sandbank and turquoise lagoon in the Fasdūtherē island chain"><span class="float-tag"><span class="em">🏖️</span> Fasdūtherē sandbanks</span></div>
-      <div>
-        <span class="eyebrow">🗺️ A second atoll, hiding inside the first</span>
-        <h2>The Fasdūtherē island chain</h2>
-        <p>Baa Atoll is officially made up of three separate natural atolls fused under one administrative name — southern and northern Maalhosmadulu, and, wedged between them, the smaller Fasdūtherē Atoll. Its scattering of low sandbanks and uninhabited islets is exactly the kind of scenery postcards are made of: ankle-deep turquoise water, a private strip of sand, and nothing else.</p>
-        <p>Several Kendhoo excursions head straight for this chain — sunbathing on a private sandbank, a castaway-style picnic, or a sunset dinner served on the sand with no one else around. Close enough for a half-day trip, remote enough to feel like you found it yourself.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <div class="section-head center reveal">
-      <span class="eyebrow">🌍 The wider reserve</span>
-      <h2>A UNESCO Biosphere Reserve at your doorstep</h2>
-      <p>Baa Atoll's 75 islands, 105 reefs and extensive seagrass and mangrove habitats were declared a UNESCO World Biosphere Reserve in 2011 — placing it alongside the Galápagos and Komodo as a globally significant natural site.</p>
-    </div>
-    <div class="stats reveal">
-      <div class="stat"><b>75</b><span>islands across Baa Atoll</span></div>
-      <div class="stat"><b>105</b><span>coral reefs (faru)</span></div>
-      <div class="stat"><b>1,200+</b><span>reef fish species recorded</span></div>
-      <div class="stat"><b>2011</b><span>UNESCO Biosphere designation</span></div>
-    </div>
-  </div>
-</section>
-
-<section id="excursions" class="bg-sun">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">🤿 Local excursions</span>
-      <h2>Things to book once you're here</h2>
-      <p>Excursions on Kendhoo are arranged directly through island guesthouses — no big tour operator required. The list below is run by <strong>Dhoani Maldives Guesthouse</strong>, a family-run local operator based on the island, and is typical of what's on offer.</p>
-    </div>
-    <div class="excursion-list reveal">
-      <div class="excursion-row"><span class="name">Castaway Picnic<span class="note">10% off each additional person</span></span><span class="price">$25<small>per person</small></span></div>\n      <div class="excursion-row"><span class="name">Guided Snorkeling — Nearby Islands</span><span class="price">$30<small>per person</small></span></div>\n      <div class="excursion-row"><span class="name">Guided Snorkeling — Island House Reef</span><span class="price">$7<small>per person</small></span></div>\n      <div class="excursion-row"><span class="name">Sunbathing at Sandbank<span class="note">10% off each additional person</span></span><span class="price">$55<small>per person</small></span></div>\n      <div class="excursion-row"><span class="name">Private Dinner / Lunch — Nearby Islands<span class="note">20% off each additional person</span></span><span class="price">$160<small>for 2 people</small></span></div>\n      <div class="excursion-row"><span class="name">Private Dinner / Lunch — Island Beach<span class="note">20% off each additional person</span></span><span class="price">$110<small>for 2 people</small></span></div>\n      <div class="excursion-row"><span class="name">Sunset Dinner — Sandbank<span class="note">20% off each additional person</span></span><span class="price">$230<small>for 2 people</small></span></div>\n      <div class="excursion-row"><span class="name">Mantastic<span class="note">Min. 2 people · 15% off if 3 or more</span></span><span class="price">$100<small>per person</small></span></div>\n      <div class="excursion-row"><span class="name">Dolphun<span class="note">15% off each additional person</span></span><span class="price">$130<small>for 2 people</small></span></div>\n      <div class="excursion-row"><span class="name">Turtour<span class="note">15% off each additional person</span></span><span class="price">$120<small>for 2 people</small></span></div>\n      <div class="excursion-row"><span class="name">Spearstrike<span class="note">1–2 people · 20% off each additional person</span></span><span class="price">$125<small>per hour</small></span></div>\n      <div class="excursion-row"><span class="name">Big Game Fishing<span class="note">3 hrs · 1–3 people (max 3) · extra hours $90–100/hr</span></span><span class="price">$125<small>per hour</small></span></div>\n      <div class="excursion-row"><span class="name">Sunset Fishing with BBQ<span class="note">1–3 people · BBQ dinner included · +$35 per extra person</span></span><span class="price">$165<small>flat rate</small></span></div>\n      <div class="excursion-row"><span class="name">Island Hopper<span class="note">1–2 people · +$30 per extra person</span></span><span class="price">$135<small>flat rate</small></span></div>\n      <div class="excursion-row"><span class="name">Resort Daycation<span class="note">Day visit to a nearby resort island</span></span><span class="price">Varies<small>on request</small></span></div>
-    </div>
-    <p class="small muted reveal" style="max-width:680px; margin-top:1.4rem;">All rates in USD, inclusive of 10% service charge and 16% GST. Prices may change slightly; confirm current rates when booking. Most other Kendhoo guesthouses can arrange similar excursions on request.</p>
-    <a href="plan.html#stay" class="btn btn-primary reveal mt-2">Book through Dhoani Maldives Guesthouse →</a>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <div class="cta-band reveal">
-      <span class="eyebrow">🧭 Next</span>
-      <h2>Getting here, and where to stay</h2>
-      <p>Ferries, speedboats, and a flight-plus-boat route all reach Kendhoo — here's how to plan it.</p>
-      <a href="plan.html" class="btn btn-primary">Plan your visit →</a>
-    </div>
-  </div>
-</section>
-
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <div class="brand">
-          <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="rgba(255,255,255,.12)"/><path d="M7 26c3-1 6-1 13-1s10 0 13 1" stroke="#7fd6f1" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M11 25c0-7 4-11 9-13" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M20 12l7 13c-4 1.6-10 1.6-14 0z" fill="#FF8A3D"/></svg>
-          Visit Kendhoo
+        <div class="hidden md:block">
+            <button class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-full hover:shadow-[4px_4px_0px_#00daf3] transition-all hover:-translate-y-1">Book Stay</button>
         </div>
-        <p>A community-told guide to Kendhoo, B. Kendhoo — a living island in the Baa Atoll UNESCO Biosphere Reserve, Maldives.</p>
-      </div>
-      <div><h5>Explore</h5><ul><li><a href="history.html">History &amp; Heritage</a></li><li><a href="culture.html">Culture &amp; Traditions</a></li><li><a href="explore.html">Things to Do</a></li><li><a href="plan.html">Plan a Visit</a></li></ul></div>
-      <div><h5>Good to know</h5><ul><li><a href="plan.html#getting-there">Getting there</a></li><li><a href="plan.html#stay">Where to stay</a></li><li><a href="plan.html#etiquette">Local etiquette</a></li><li><a href="explore.html#excursions">Excursions &amp; pricing</a></li></ul></div>
-      <div><h5>Kendhoo, Baa Atoll</h5><ul><li>5°16′34″N 73°00′40″E</li><li>133 km NW of Malé</li><li><a href="/cdn-cgi/l/email-protection#96fef3fafaf9d6e0ffe5ffe2fdf3f8f2fef9f9b8f5f9fb"><span class="__cf_email__" data-cfemail="4c24292020230c3a253f253827292228242323622f2321">[email&#160;protected]</span></a></li></ul></div>
-    </div>
-    <div class="footer-bottom">
-      <span>© <span data-year></span> Visit Kendhoo — an independent community guide, not an official government site.</span>
-      <span><a href="credits.html">Photo &amp; source credits</a></span>
-    </div>
-  </div>
-</footer>
+        <button class="md:hidden text-primary nav-toggle">
+            <span class="material-symbols-outlined text-3xl">menu</span>
+        </button>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden flex-col absolute top-full left-0 w-full bg-white border-t border-surface-variant p-4 gap-4 shadow-lg">
+            <a href="index.html" class="text-on-surface-variant">Home</a>
+            <a href="history.html" class="text-on-surface-variant">History</a>
+            <a href="culture.html" class="text-on-surface-variant">Culture</a>
+            <a href="explore.html" class="text-secondary font-bold">Things to Do</a>
+            <a href="plan.html" class="text-on-surface-variant">Plan a Visit</a>
+        </div>
+    </nav>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/main.js"></script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a11a4cf2592e2717',t:'MTc4MjQ1Njg2NQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+    <!-- Main Content -->
+    <main class="pt-[100px] md:pt-[120px] pb-margin-desktop px-gutter max-w-container-max mx-auto">
+        <!-- Hero Section -->
+        <section class="mb-24 relative overflow-hidden rounded-xl h-[60vh] min-h-[500px] flex items-end p-8 md:p-16 reveal">
+            <div class="absolute inset-0 z-0">
+                <img alt="" class="w-full h-full object-cover" src="assets/img/manta-ray.jpg" data-cms="hero.image"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+            </div>
+            <div class="relative z-10 w-full md:w-2/3">
+                <span class="inline-block bg-secondary-container text-on-secondary-container font-label-md text-label-md px-4 py-1 rounded-full mb-4" data-cms="hero.eyebrow">🤿 Excursions & Activities</span>
+                <h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-white mb-6" data-cms="hero.title">From Sandbanks to Manta Trains</h1>
+                <p class="font-body-lg text-body-lg text-white/90 max-w-xl" data-cms="hero.lede">
+                    Discover the vibrant marine life of the Baa Atoll UNESCO Biosphere Reserve, just a short boat ride from Kendhoo's shores.
+                </p>
+            </div>
+        </section>
+
+        <!-- Excursion Grid (Bento Style) -->
+        <section class="mb-24 reveal">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="h-px bg-outline flex-1"></div>
+                <h2 class="font-headline-md text-headline-md text-on-background">Signature Experiences</h2>
+                <div class="h-px bg-outline flex-1"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[300px]">
+                <!-- Hanifaru Bay Encounters -->
+                <div class="md:col-span-8 row-span-2 relative group overflow-hidden rounded-xl bg-white border border-secondary-fixed/30 hover:shadow-[8px_8px_0px_#00daf3] transition-all duration-300 reveal">
+                    <img alt="" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="assets/img/manta-ray.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="material-symbols-outlined text-secondary-fixed-dim">waves</span>
+                            <span class="text-secondary-fixed-dim font-label-md text-label-md uppercase tracking-wider">Jul - Oct Season</span>
+                        </div>
+                        <h3 class="font-headline-lg text-headline-lg text-white mb-2">Hanifaru Bay Encounters</h3>
+                        <p class="font-body-md text-body-md text-white/80 max-w-md">
+                            A short boat ride to the world's largest known manta ray feeding aggregation. Snorkel alongside these gentle giants in a protected marine area.
+                        </p>
+                    </div>
+                </div>
+                <!-- Private Sandbank Escape -->
+                <div class="md:col-span-4 row-span-1 relative group overflow-hidden rounded-xl bg-white border border-secondary-fixed/30 hover:shadow-[4px_4px_0px_#ff5f1f] transition-all duration-300 reveal">
+                    <img alt="" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="assets/img/baa-atoll-aerial-1.jpg"/>
+                    <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-300"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full bg-gradient-to-t from-black/80 to-transparent">
+                        <h3 class="font-headline-md text-headline-md text-white mb-1">Private Sandbank Escape</h3>
+                        <p class="font-body-md text-body-md text-white/90 line-clamp-2">Quiet isolation on the pristine white sands of the Fasdūtherē chain.</p>
+                    </div>
+                </div>
+                <!-- Sunset Fishing -->
+                <div class="md:col-span-4 row-span-1 relative group overflow-hidden rounded-xl bg-white border border-secondary-fixed/30 hover:shadow-[4px_4px_0px_#ab3600] transition-all duration-300 reveal">
+                    <img alt="" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="assets/img/dhoni-sailboat.jpg"/>
+                    <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-300"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full bg-gradient-to-t from-black/80 to-transparent">
+                        <h3 class="font-headline-md text-headline-md text-white mb-1">Sunset Fishing</h3>
+                        <p class="font-body-md text-body-md text-white/90 line-clamp-2">Traditional dhoni experience ending with a beach barbecue.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Local Activities & Pricing -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24 items-start">
+            <!-- Activities List -->
+            <div class="reveal">
+                <h2 class="font-headline-lg text-headline-lg text-on-background mb-8">Everyday Island Life</h2>
+                <div class="space-y-6">
+                    <div class="flex gap-4 items-start p-4 bg-white rounded-lg border border-outline-variant/30 shadow-sm hover:border-secondary-fixed transition-colors reveal">
+                        <div class="bg-primary/10 p-3 rounded-full text-primary shrink-0">
+                            <span class="material-symbols-outlined">sailing</span>
+                        </div>
+                        <div>
+                            <h4 class="font-label-md text-label-md text-on-background mb-1">House Reef Snorkeling</h4>
+                            <p class="font-body-md text-body-md text-on-surface-variant">Grab a mask and explore the vibrant coral gardens just steps from the shore.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start p-4 bg-white rounded-lg border border-outline-variant/30 shadow-sm hover:border-secondary-fixed transition-colors reveal">
+                        <div class="bg-tertiary/10 p-3 rounded-full text-tertiary shrink-0">
+                            <span class="material-symbols-outlined">explore</span>
+                        </div>
+                        <div>
+                            <h4 class="font-label-md text-label-md text-on-background mb-1">Village & Culture Walks</h4>
+                            <p class="font-body-md text-body-md text-on-surface-variant">Stroll through the 0.145 km² island, visiting the 800-year-old Magaamfulhu and local healers.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start p-4 bg-white rounded-lg border border-outline-variant/30 shadow-sm hover:border-secondary-fixed transition-colors reveal">
+                        <div class="bg-secondary/10 p-3 rounded-full text-secondary shrink-0">
+                            <span class="material-symbols-outlined">restaurant</span>
+                        </div>
+                        <div>
+                            <h4 class="font-label-md text-label-md text-on-background mb-1">Local Dining & Fani</h4>
+                            <p class="font-body-md text-body-md text-on-surface-variant">Taste the "sweet Kendhoo" coconuts and traditional Maldivian short eats at village cafes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pricing Table & Booking -->
+            <div class="bg-white p-8 md:p-10 rounded-xl shadow-[8px_8px_0px_#ffb59c] border border-outline-variant/50 reveal" id="excursions">
+                <h3 class="font-headline-md text-headline-md text-on-background mb-6">Excursions & Pricing</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                    Local trips are mostly arranged straight through island guesthouses. Prices are approximate and per person.
+                </p>
+                <div class="space-y-4 mb-10">
+                    <!-- Dynamic Content Area -->
+                </div>
+                <div class="bg-surface-container-low p-6 rounded-lg text-center">
+                    <span class="material-symbols-outlined text-tertiary text-4xl mb-3">hotel_class</span>
+                    <h4 class="font-label-md text-label-md text-on-background mb-2">Ready to explore?</h4>
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-6 text-sm">Guesthouses can arrange your transfer, your room, and every excursion.</p>
+                    <a href="plan.html#stay" class="w-full inline-block bg-primary text-on-primary font-label-md text-label-md px-6 py-4 rounded-full hover:bg-primary-container transition-colors shadow-md hover:shadow-lg">
+                        Find Guesthouses
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full bg-surface-container-low dark:bg-inverse-surface border-t border-surface-variant dark:border-secondary">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 flex flex-col md:flex-row justify-between gap-gutter">
+            <!-- Brand Column -->
+            <div class="md:w-1/3 space-y-4">
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-secondary dark:text-secondary-fixed" style="font-variation-settings: 'FILL' 1;">landscape</span>
+                    <span class="font-headline-md text-[24px] font-semibold text-secondary dark:text-secondary-fixed tracking-tight" data-cms-site="brand_name">Visit Kendhoo</span>
+                </div>
+                <p class="font-body-md text-[14px] text-on-surface-variant dark:text-secondary-fixed-dim" data-cms-site="footer_description">
+                    A community-told guide to Kendhoo, B. Kendhoo — a living island in the Baa Atoll UNESCO Biosphere Reserve, Maldives.
+                </p>
+            </div>
+            <!-- Links Columns -->
+            <div class="flex flex-wrap md:flex-nowrap gap-12">
+                <div class="space-y-4">
+                    <h4 class="font-label-md text-label-md text-on-surface dark:text-white uppercase tracking-widest">Explore</h4>
+                    <ul class="space-y-2 font-body-md text-[14px]">
+                        <li><a class="text-on-surface-variant dark:text-secondary-fixed-dim underline-offset-4 hover:underline hover:text-primary transition-colors duration-200" href="history.html">History & Heritage</a></li>
+                        <li><a class="text-on-surface-variant dark:text-secondary-fixed-dim underline-offset-4 hover:underline hover:text-primary transition-colors duration-200" href="culture.html">Culture & Traditions</a></li>
+                        <li><a class="text-on-surface-variant dark:text-secondary-fixed-dim underline-offset-4 hover:underline hover:text-primary transition-colors duration-200" href="explore.html">Things to Do</a></li>
+                        <li><a class="text-on-surface-variant dark:text-secondary-fixed-dim underline-offset-4 hover:underline hover:text-primary transition-colors duration-200" href="plan.html">Plan a Visit</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="font-label-md text-label-md text-on-surface dark:text-white uppercase tracking-widest">Good to know</h4>
+                    <ul class="space-y-2 font-body-md text-[14px]">
+                        <li><a class="text-on-surface-variant dark:text-secondary-fixed-dim underline-offset-4 hover:underline hover:text-primary transition-colors duration-200" href="plan.html#getting-there">Getting there</a></li>
+                        <li><a class="text-on-surface-variant dark:text-secondary-fixed-dim underline-offset-4 hover:underline hover:text-primary transition-colors duration-200" href="plan.html#stay">Where to stay</a></li>
+                        <li><a class="text-on-surface-variant dark:text-secondary-fixed-dim underline-offset-4 hover:underline hover:text-primary transition-colors duration-200" href="plan.html#etiquette">Local etiquette</a></li>
+                        <li><a class="text-on-surface-variant dark:text-secondary-fixed-dim underline-offset-4 hover:underline hover:text-primary transition-colors duration-200" href="explore.html#excursions">Excursions & pricing</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="font-label-md text-label-md text-on-surface dark:text-white uppercase tracking-widest">Kendhoo, Baa Atoll</h4>
+                    <ul class="space-y-2 font-body-md text-[14px] text-on-surface-variant dark:text-secondary-fixed-dim">
+                        <li data-cms-site="coordinates">5°16′34″N 73°00′40″E</li>
+                        <li data-cms-site="distance_from_male">133 km NW of Malé</li>
+                        <li><a class="underline-offset-4 hover:underline hover:text-primary transition-colors duration-200" href="#" data-cms-site="contact_email">hello@visitkendhoo.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-6 border-t border-surface-variant/50 dark:border-secondary/50 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="font-body-md text-[12px] text-on-surface-variant/70 dark:text-secondary-fixed-dim/70">
+                © <span data-year>2024</span> Kendhoo Community Council. Part of the Baa Atoll UNESCO Biosphere Reserve.
+            </p>
+            <p class="font-body-md text-[12px] text-on-surface-variant/70 dark:text-secondary-fixed-dim/70">
+                <a class="underline hover:text-primary transition-colors" href="credits.html">Photo & source credits</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/cms-bridge.js"></script>
+</body>
 </html>

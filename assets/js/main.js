@@ -2,23 +2,40 @@
 document.addEventListener('DOMContentLoaded', function () {
   // Mobile nav toggle
   var toggle = document.querySelector('.nav-toggle');
-  var links = document.querySelector('.nav-links');
-  if (toggle && links) {
+  var menu = document.querySelector('.mobile-menu');
+  if (toggle && menu) {
     toggle.addEventListener('click', function () {
-      var open = links.classList.toggle('is-open');
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      var isHidden = menu.classList.contains('hidden');
+      if (isHidden) {
+        menu.classList.remove('hidden');
+        menu.classList.add('flex');
+        toggle.setAttribute('aria-expanded', 'true');
+      } else {
+        menu.classList.add('hidden');
+        menu.classList.remove('flex');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
     });
-    links.querySelectorAll('a').forEach(function (a) {
-      a.addEventListener('click', function () { links.classList.remove('is-open'); });
+    menu.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        menu.classList.add('hidden');
+        menu.classList.remove('flex');
+      });
     });
   }
 
   // Mark active nav link
   var here = (location.pathname.split('/').pop() || 'index.html');
-  document.querySelectorAll('.nav-links a').forEach(function (a) {
+  if (here === '' || here === '/') here = 'index.html';
+
+  document.querySelectorAll('nav a, .mobile-menu a').forEach(function (a) {
     var target = a.getAttribute('href');
-    if (target === here || (here === '' && target === 'index.html')) {
+    if (target === here) {
       a.classList.add('active');
+      // Adding common active styles from the redesign
+      a.classList.add('font-bold', 'border-b-2');
+      // Remove default inactive styles if present
+      a.classList.remove('text-on-surface-variant', 'opacity-70');
     }
   });
 
@@ -39,6 +56,8 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Current year in footer
-  var yearEl = document.querySelector('[data-year]');
-  if (yearEl) { yearEl.textContent = new Date().getFullYear(); }
+  var yearEl = document.querySelectorAll('[data-year]');
+  yearEl.forEach(function(el) {
+      el.textContent = new Date().getFullYear();
+  });
 });
