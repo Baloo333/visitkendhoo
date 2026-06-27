@@ -17,7 +17,7 @@ stats:
     label: inhabited islands of Baa Atoll
   - value: 0.145 km²
     label: easy to explore on foot
-  - value: 2011
+  - value: "2011"
     label: UNESCO Biosphere Reserve
 experiences:
   - icon: 🕌
