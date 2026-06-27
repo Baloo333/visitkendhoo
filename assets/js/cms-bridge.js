@@ -56,24 +56,27 @@ function applySiteData(data) {
 
 function applyPageData(data, page) {
     if (data.hero) {
-        const hero = document.querySelector('.hero-card, .subhero-card');
-        if (hero) {
+        const heroSection = document.querySelector('section.relative.min-h-screen, header.relative.w-full');
+        if (heroSection) {
             if (data.hero.image) {
-                const img = hero.querySelector('img');
-                if (img) img.src = data.hero.image;
+                const img = heroSection.querySelector('img, .bg-cover');
+                if (img) {
+                    if (img.tagName === 'IMG') img.src = data.hero.image;
+                    else img.style.backgroundImage = `url('${data.hero.image}')`;
+                }
             }
-            const eyebrow = hero.querySelector('.eyebrow');
+            const eyebrow = heroSection.querySelector('.font-label-md, .font-label-caps');
             if (eyebrow) eyebrow.textContent = data.hero.eyebrow;
-            const h1 = hero.querySelector('h1');
+            const h1 = heroSection.querySelector('h1');
             if (h1) {
                 const titleText = data.hero.title || '';
                 if (data.hero.dhivehi_title) {
-                    h1.innerHTML = `${titleText}<span class="dv">${data.hero.dhivehi_title}</span>`;
+                    h1.innerHTML = `${titleText}<span class="block font-headline-md text-headline-md text-secondary-fixed mt-2">${data.hero.dhivehi_title}</span>`;
                 } else {
                     h1.textContent = titleText;
                 }
             }
-            const lede = hero.querySelector('.lede');
+            const lede = heroSection.querySelector('p.font-body-lg');
             if (lede) lede.textContent = data.hero.lede;
         }
     }
@@ -81,46 +84,54 @@ function applyPageData(data, page) {
     // Home Page Specifics
     if (page === 'home') {
         if (data.stats) {
-            const statsWrap = document.querySelector('.stats');
-            if (statsWrap) {
-                statsWrap.innerHTML = data.stats.map(s => `
-                    <div class="stat"><b>${s.value}</b><span>${s.label}</span></div>
-                `).join('');
+            const statsGrid = document.querySelector('section.py-section-gap .grid.grid-cols-2');
+            if (statsGrid) {
+                const statCards = statsGrid.querySelectorAll('.bg-surface-container-lowest, .bg-white');
+                data.stats.forEach((s, i) => {
+                    if (statCards[i]) {
+                        const h3 = statCards[i].querySelector('h3');
+                        if (h3) h3.textContent = s.value;
+                        const p = statCards[i].querySelector('p');
+                        if (p) p.textContent = s.label;
+                    }
+                });
             }
         }
         if (data.experiences) {
-            const cards = document.querySelectorAll('section:nth-of-type(3) .grid .card');
+            const expCards = document.querySelectorAll('section.bg-surface-container-low .grid .group');
             data.experiences.forEach((exp, i) => {
-                if (cards[i]) {
-                    const ic = cards[i].querySelector('.ic');
+                if (expCards[i]) {
+                    const ic = expCards[i].querySelector('.material-symbols-outlined');
                     if (ic) ic.textContent = exp.icon;
-                    const h3 = cards[i].querySelector('h3');
+                    const h3 = expCards[i].querySelector('h3');
                     if (h3) h3.textContent = exp.title;
-                    const p = cards[i].querySelector('p');
+                    const p = expCards[i].querySelector('p');
                     if (p) p.textContent = exp.text;
-                    const a = cards[i].querySelector('.card-link');
+                    const a = expCards[i].querySelector('a');
                     if (a) {
-                        a.textContent = exp.link_label;
+                        a.innerHTML = `${exp.link_label} <span class="material-symbols-outlined text-[18px]">arrow_forward</span>`;
                         a.href = exp.link_url;
                     }
                 }
             });
         }
         if (data.split_sections) {
-            const splits = document.querySelectorAll('.split');
+            const sections = document.querySelectorAll('section.py-section-gap.bg-background, section.py-section-gap.bg-surface-container-low');
+            // Storytelling and Culture sections
             data.split_sections.forEach((sec, i) => {
-                if (splits[i]) {
-                    const img = splits[i].querySelector('.split-media img');
+                const el = sections[i];
+                if (el) {
+                    const img = el.querySelector('img');
                     if (img) img.src = sec.image;
-                    const tag = splits[i].querySelector('.float-tag');
-                    if (tag) tag.innerHTML = `<span class="em">${sec.float_tag_emoji}</span> ${sec.float_tag_text}`;
-                    const eyebrow = splits[i].querySelector('.eyebrow');
+                    const tag = el.querySelector('.glass-card span.font-body-md');
+                    if (tag) tag.innerHTML = `<span class="text-2xl">${sec.float_tag_emoji}</span> ${sec.float_tag_text}`;
+                    const eyebrow = el.querySelector('.font-label-md');
                     if (eyebrow) eyebrow.textContent = sec.eyebrow;
-                    const h2 = splits[i].querySelector('h2');
+                    const h2 = el.querySelector('h2');
                     if (h2) h2.textContent = sec.title;
-                    const p = splits[i].querySelector('p');
+                    const p = el.querySelector('p.font-body-lg');
                     if (p) p.textContent = sec.text;
-                    const btn = splits[i].querySelector('.btn');
+                    const btn = el.querySelector('a.inline-flex');
                     if (btn) {
                         btn.textContent = sec.button_label;
                         btn.href = sec.button_url;
@@ -133,28 +144,35 @@ function applyPageData(data, page) {
     // History Page Specifics
     if (page === 'history') {
         if (data.quick_facts) {
-            const factList = document.querySelector('.card.bg-sky ul');
-            if (factList) {
-                factList.innerHTML = data.quick_facts.map(f => `
-                    <li><strong>${f.label}:</strong> ${f.value}</li>
+            const statsGrid = document.querySelector('#quick-facts-grid');
+            if (statsGrid) {
+                statsGrid.innerHTML = data.quick_facts.map(fact => `
+                    <div class="bg-surface-container-lowest p-8 rounded-xl border border-surface-variant shadow-sm text-center reveal">
+                        <h3 class="font-headline-lg text-headline-lg text-primary">${fact.value}</h3>
+                        <p class="font-body-md text-[14px] text-on-surface-variant mt-2">${fact.label}</p>
+                    </div>
                 `).join('');
             }
         }
         if (data.content_sections) {
-            const sections = document.querySelectorAll('section:not(.subhero)');
+            const sections = document.querySelectorAll('main section.grid');
             data.content_sections.forEach((sec, i) => {
-                const el = sections[i + 1]; // Offset by 1 for the first text section
+                const el = sections[i];
                 if (el) {
-                    const img = el.querySelector('.split-media img');
+                    const img = el.querySelector('img');
                     if (img) img.src = sec.image;
-                    const tag = el.querySelector('.float-tag');
-                    if (tag) tag.innerHTML = `<span class="em">${sec.float_tag_emoji}</span> ${sec.float_tag_text}`;
-                    const eyebrow = el.querySelector('.eyebrow');
-                    if (eyebrow) eyebrow.textContent = sec.eyebrow;
+                    const tagLabel = el.querySelector('.glass-card .font-label-md');
+                    if (tagLabel) tagLabel.textContent = sec.float_tag_text;
+                    // Note: float_tag_emoji not explicitly used in the snippet for this section but could be added
+
                     const h2 = el.querySelector('h2');
                     if (h2) h2.textContent = sec.title;
-                    const p = el.querySelector('p');
-                    if (p) p.textContent = sec.text;
+                    const ps = el.querySelectorAll('p.font-body-md');
+                    if (ps.length > 0) {
+                        // Split text if it's long? In the snippet there are two p tags.
+                        // For now just put the text in the first one.
+                        ps[0].textContent = sec.text;
+                    }
                 }
             });
         }
@@ -162,13 +180,14 @@ function applyPageData(data, page) {
 
     // Culture Page Specifics
     if (page === 'culture' && data.remedies) {
-        const grid = document.querySelector('.grid-3');
+        const grid = document.querySelector('section.w-full .grid-cols-1.md\\:grid-cols-3');
         if (grid) {
             grid.innerHTML = data.remedies.map(r => `
-                <div class="card reveal">
-                    <div class="ic mint">🌿</div>
-                    <h3>${r.name}</h3>
-                    <p>${r.description}</p>
+                <div class="bg-white rounded-xl overflow-hidden primary-shadow group reveal">
+                    <div class="p-6">
+                        <h3 class="font-headline-md text-headline-md text-primary mb-2">${r.name}</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant">${r.description}</p>
+                    </div>
                 </div>
             `).join('');
         }
@@ -176,12 +195,18 @@ function applyPageData(data, page) {
 
     // Explore Page Specifics
     if (page === 'explore' && data.excursions) {
-        const list = document.querySelector('.excursion-list');
-        if (list) {
-            list.innerHTML = data.excursions.map(e => `
-                <div class="excursion-row reveal">
-                    <span class="name">${e.name}${e.note ? `<span class="note">${e.note}</span>` : ''}</span>
-                    <span class="price">${e.price}${e.unit ? `<small>${e.unit}</small>` : ''}</span>
+        const pricingTable = document.querySelector('#excursions .space-y-4');
+        if (pricingTable) {
+            pricingTable.innerHTML = data.excursions.map(e => `
+                <div class="flex justify-between items-center border-b border-outline-variant/30 pb-3 reveal">
+                    <div class="flex flex-col">
+                        <span class="font-body-md text-body-md text-on-background">${e.name}</span>
+                        ${e.note ? `<span class="text-[12px] text-on-surface-variant">${e.note}</span>` : ''}
+                    </div>
+                    <div class="text-right">
+                        <span class="font-label-md text-label-md text-primary block">${e.price}</span>
+                        ${e.unit ? `<span class="text-[10px] text-on-surface-variant uppercase">${e.unit}</span>` : ''}
+                    </div>
                 </div>
             `).join('');
         }
@@ -190,51 +215,67 @@ function applyPageData(data, page) {
     // Plan Page Specifics
     if (page === 'plan') {
         if (data.guesthouses) {
-            const grid = document.querySelector('#stay .grid');
+            const grid = document.querySelector('#guesthouse-grid');
             if (grid) {
                 grid.innerHTML = data.guesthouses.map(g => `
-                    <div class="card reveal" ${g.featured ? 'style="border:2px solid var(--sun);"' : ''}>
-                        ${g.featured ? '<span class="chip chip-sun">⭐ Featured local guesthouse</span>' : '<div class="ic">🛏️</div>'}
-                        <h3 style="font-size:${g.featured ? '1.5rem' : '1.2rem'}; margin-top:.7rem;">${g.name}</h3>
-                        <p>${g.description}</p>
+                    <div class="bg-surface-container-lowest p-8 rounded-xl border border-surface-variant shadow-sm group hover:-translate-y-1 transition-transform duration-300 reveal">
+                        <div class="w-12 h-12 bg-surface-container rounded-full flex items-center justify-center mb-6 text-primary">
+                            <span class="material-symbols-outlined">${g.featured ? 'hotel_class' : 'hotel'}</span>
+                        </div>
+                        <h3 class="font-headline-md text-[24px] font-semibold text-on-surface mb-4">${g.name}</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-6">${g.description}</p>
                         ${g.details ? `
-                            <ul style="font-size:.92rem; color:var(--ink-soft); display:grid; gap:.5rem; margin-top:1.1rem;">
-                                ${g.details.address ? `<li>📍 ${g.details.address}</li>` : ''}
-                                ${g.details.email ? `<li>✉️ <a class="cite-link" href="mailto:${g.details.email}">${g.details.email}</a></li>` : ''}
-                                ${g.details.phone ? `<li>📞 ${g.details.phone}</li>` : ''}
-                                ${g.details.website ? `<li>🌐 <a class="cite-link" href="${g.details.website}" target="_blank" rel="noopener">${g.details.website.replace('https://','')}</a></li>` : ''}
+                            <ul class="text-sm text-on-surface-variant space-y-2 mb-6">
+                                ${g.details.address ? `<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">location_on</span> ${g.details.address}</li>` : ''}
+                                ${g.details.email ? `<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">mail</span> <a href="mailto:${g.details.email}" class="hover:text-primary transition-colors">${g.details.email}</a></li>` : ''}
+                                ${g.details.phone ? `<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">phone</span> ${g.details.phone}</li>` : ''}
+                                ${g.details.website ? `<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">language</span> <a href="${g.details.website}" target="_blank" class="hover:text-primary transition-colors">${g.details.website.replace('https://','')}</a></li>` : ''}
                             </ul>
                         ` : ''}
                         ${g.button_label ? `
-                            <a href="${g.button_url}" target="_blank" rel="noopener" class="btn btn-primary mt-2">${g.button_label}</a>
+                            <a href="${g.button_url}" target="_blank" class="inline-flex bg-primary text-on-primary px-6 py-2 rounded-xl font-body-md text-body-md hover:-translate-y-0.5 transition-transform duration-200">
+                                ${g.button_label}
+                            </a>
                         ` : ''}
                     </div>
                 `).join('');
             }
         }
         if (data.ways_to_reach) {
-            const steps = document.querySelectorAll('.steps .step');
-            data.ways_to_reach.forEach((w, i) => {
-                if (steps[i]) {
-                    const num = steps[i].querySelector('.num');
-                    if (num) num.textContent = w.icon;
-                    const h4 = steps[i].querySelector('h4');
-                    if (h4) h4.textContent = w.title;
-                    const p = steps[i].querySelector('p');
-                    if (p) p.textContent = w.text;
-                }
-            });
+            const reachGrid = document.querySelector('#getting-there .grid-cols-1.md\\:grid-cols-3');
+            if (reachGrid) {
+                const options = reachGrid.querySelectorAll('.glass-panel');
+                data.ways_to_reach.forEach((w, i) => {
+                    if (options[i]) {
+                        const icon = options[i].querySelector('.material-symbols-outlined');
+                        // Mapping icon text to something reasonable if it's an emoji
+                        if (w.icon === '✈️') icon.textContent = 'flight';
+                        else if (w.icon === '🚤') icon.textContent = 'sailing';
+                        else if (w.icon === '⛴️') icon.textContent = 'directions_boat';
+
+                        const h3 = options[i].querySelector('h3');
+                        if (h3) h3.textContent = w.title;
+                        const p = options[i].querySelector('p');
+                        if (p) p.textContent = w.text;
+                    }
+                });
+            }
         }
         if (data.etiquette) {
-            const items = document.querySelectorAll('.acc-item');
-            data.etiquette.forEach((e, i) => {
-                if (items[i]) {
-                    const summary = items[i].querySelector('summary');
-                    if (summary) summary.textContent = e.question;
-                    const body = items[i].querySelector('.acc-body');
-                    if (body) body.textContent = e.answer;
-                }
-            });
+            const etiquetteGrid = document.querySelector('section.bg-surface-bright .grid');
+            if (etiquetteGrid) {
+                etiquetteGrid.innerHTML = data.etiquette.map(e => `
+                    <div class="flex items-start gap-4 p-6 glass-panel rounded-lg reveal">
+                        <span class="material-symbols-outlined text-secondary" style="font-size: 28px;">info</span>
+                        <div>
+                            <h4 class="font-label-md text-label-md text-on-surface uppercase mb-2">${e.question}</h4>
+                            <p class="font-body-md text-body-md text-on-surface-variant text-sm">
+                                ${e.answer}
+                            </p>
+                        </div>
+                    </div>
+                `).join('');
+            }
         }
     }
 
