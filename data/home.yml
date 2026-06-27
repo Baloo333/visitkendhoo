@@ -2,14 +2,22 @@ hero:
   eyebrow: 🏝️ Baa Atoll · UNESCO Biosphere Reserve
   title: Say hello to Kendhoo
   dhivehi_title: ކެންދޫ · Maldives
-  lede: |
-    A small fishing island with a very big story — said to be where Islam first took root in the Maldives, home to a centuries-old healing tradition, and a short boat ride from the manta rays of Hanifaru Bay.
-  image: assets/img/kendhoo-aerial.jpg
+  lede: >
+    A small fishing island with a very big story — said to be where Islam first
+    took root in the Maldives, home to a centuries-old healing tradition, and a
+    short boat ride from the manta rays of Hanifaru Bay.
+  image: /assets/img/41e19c33f11f8fd7a131d9665f2e296b622a161a-1.jpeg
 welcome:
   eyebrow: 👋 Welcome
   title: An island that still remembers
-  text: |
-    Most visitors to the Maldives never set foot on an inhabited island. Kendhoo is one of thirteen lived-in islands in Baa Atoll — a working community of around a thousand people, where the harbour fills with dhonis at dusk, thatch is still woven by hand, and elders still point to the very spot where, local tradition holds, Islamic prayer was first offered in the Maldives. It doesn't perform its history for tourists. It simply still has one, in daily use.
+  text: >
+    Most visitors to the Maldives never set foot on an inhabited island. Kendhoo
+    is one of thirteen lived-in islands in Baa Atoll — a working community of
+    around a thousand people, where the harbour fills with dhonis at dusk,
+    thatch is still woven by hand, and elders still point to the very spot
+    where, local tradition holds, Islamic prayer was first offered in the
+    Maldives. It doesn't perform its history for tourists. It simply still has
+    one, in daily use.
 stats:
   - value: 800+
     label: years of recorded island history
@@ -22,28 +30,37 @@ stats:
 experiences:
   - icon: 🕌
     title: 800-year-old heritage
-    text: |
-      The Magaamfulhu — a coral-stone house marking where Islam's first teacher prayed in 1153 — still stands, beside one of Baa Atoll's oldest coral-stone mosques.
+    text: >
+      The Magaamfulhu — a coral-stone house marking where Islam's first teacher
+      prayed in 1153 — still stands, beside one of Baa Atoll's oldest
+      coral-stone mosques.
     link_label: Read the story →
     link_url: history.html
   - icon: 🌿
     title: Dhivehi Beys healers
-    text: |
-      Kendhoo is known nationwide for traditional herbal medicine — people travel from other islands, and even other countries, for treatment here.
+    text: >
+      Kendhoo is known nationwide for traditional herbal medicine — people
+      travel from other islands, and even other countries, for treatment here.
     link_label: Explore the tradition →
     link_url: culture.html
   - icon: 🐬
     title: Hanifaru Bay nearby
-    text: |
-      A short boat ride to the world's largest known manta ray feeding aggregation — plus the quiet sandbanks of the Fasdūtherē chain.
+    text: >
+      A short boat ride to the world's largest known manta ray feeding
+      aggregation — plus the quiet sandbanks of the Fasdūtherē chain.
     link_label: See things to do →
     link_url: explore.html
 split_sections:
   - eyebrow: 📜 The naming legend
     title: The island that named itself "sweet"
-    text: |
-      Maldivian tradition holds that an Arab scholar — remembered here as Thabreyzgefaanu — who is widely credited with introducing Islam to the Maldives in 1153, stopped on this island and asked for a young coconut to drink. He found it so sweet that he renamed the island Fani Kendhoo, "sweet Kendhoo." The spot where he prayed was later marked by a coral-stone house, the Magaamfulhu, which still stands today.
-    image: assets/img/kendhoo-harbour.jpg
+    text: >
+      Maldivian tradition holds that an Arab scholar — remembered here as
+      Thabreyzgefaanu — who is widely credited with introducing Islam to the
+      Maldives in 1153, stopped on this island and asked for a young coconut to
+      drink. He found it so sweet that he renamed the island Fani Kendhoo,
+      "sweet Kendhoo." The spot where he prayed was later marked by a
+      coral-stone house, the Magaamfulhu, which still stands today.
+    image: /assets/img/kendhoo-harbour.jpg
     float_tag_emoji: 🥥
     float_tag_text: Fani Kendhoo · "sweet Kendhoo"
     button_label: Read the Magaamfulhu story →
@@ -51,9 +68,14 @@ split_sections:
     reverse: false
   - eyebrow: 🎉 A working island
     title: Festivals, fishing & Friday prayers
-    text: |
-      Daily life here still runs on tide, prayer time and harvest. Eid is marked with Boduberu drumming and shared feasts, children's days fill the schoolyard, and the harbour empties and fills again with the fishing fleet. Visiting Kendhoo means stepping into a Maldivian island as residents actually live it — modest dress on the village streets, warm hospitality, and a pace set by the sea.
-    image: assets/img/kendhoo-childrens-day.jpg
+    text: >
+      Daily life here still runs on tide, prayer time and harvest. Eid is marked
+      with Boduberu drumming and shared feasts, children's days fill the
+      schoolyard, and the harbour empties and fills again with the fishing
+      fleet. Visiting Kendhoo means stepping into a Maldivian island as
+      residents actually live it — modest dress on the village streets, warm
+      hospitality, and a pace set by the sea.
+    image: /assets/img/kendhoo-childrens-day.jpg
     float_tag_emoji: 🥁
     float_tag_text: Boduberu nights
     button_label: Culture & traditions →
